@@ -42,6 +42,7 @@ app.get('/json%20natural', function(req, res) {
         "unix": unixDate,
         "natural": naturalDate
     };
+    res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(response)); 
 });
 
@@ -58,6 +59,7 @@ app.get('/json%20unix', function(req, res) {
         "unix": unixDate,
         "natural": naturalDate
     };
+    res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(response)); 
 });
 
